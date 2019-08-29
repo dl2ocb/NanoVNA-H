@@ -459,6 +459,11 @@ float swr(float *v)
   return (1 + x)/(1 - x);
 }
 
+float tdr(float *v)
+{
+	
+}
+
 #define RADIUS ((HEIGHT-1)/2)
 void
 cartesian_scale(float re, float im, int *xp, int *yp, float scale)
