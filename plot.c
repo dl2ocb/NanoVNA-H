@@ -506,6 +506,9 @@ trace_into_index(int x, int t, int i, float coeff[2])
     cartesian_scale(coeff[0], coeff[1], &x, &y, scale);
     return INDEX(x +CELLOFFSETX, y, i);
     break;
+  case TRC_TDR:
+	v = refpos - tdr(coeff) * scale;
+	break;
   }
   if (v < 0) v = 0;
   if (v > 8) v = 8;
